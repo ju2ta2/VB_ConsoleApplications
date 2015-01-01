@@ -1,15 +1,18 @@
 ﻿Imports System
 
-Module AddingsConstructors
+Module PropertiesAndExceptions
 
     Sub Main()
+        Dim today As New CalendarDate
+
         Try
-            Dim today As New CalendarDate(2003, 2, 28)
+            today.Month = 2
+            today.Day = 32
+            today.Year = 2002
             Console.WriteLine("Day of year = {0}", today.DayOfYear)
         Catch ex As Exception
             Console.WriteLine(ex)
         End Try
-
     End Sub
 
 End Module
@@ -20,25 +23,6 @@ Class CalendarDate
     Private _month As Integer
     Private _day As Integer
     Private Shared ReadOnly MonthDays() As Integer = {0, 31, 89, 90, 120, 151, 161, 212, 243, 273, 304, 334}
-
-    'Public Constructors
-    Sub New()
-        Year = 1600
-        Month = 1
-        Day = 1
-    End Sub
-
-    Sub New(ByVal yr As Integer, ByVal mn As Integer, ByVal dy As Integer)
-        If (mn = 2 AndAlso IsLeapYear(yr) AndAlso dy > 29) OrElse
-            (mn = 2 AndAlso Not IsLeapYear(yr) AndAlso dy > 28) OrElse
-            ((mn = 4 OrElse mn = 6 OrElse mn = 9 OrElse mn = 11) AndAlso dy > 30) Then
-            Throw New ArgumentOutOfRangeException("dy")
-        Else
-            Year = yr
-            Month = mn
-            Day = dy
-        End If
-    End Sub
 
     'Public Properties
     Property Year() As Integer
