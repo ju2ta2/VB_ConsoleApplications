@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{26105B87-040B-4CBF-9DFE-E92A673FB14F}</ProjectGuid>
+    <ProjectGuid>{BD375133-05B2-4A22-B204-C730B2BC303E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>ConsoleHelloWorld.ConsoleHelloWorld</StartupObject>
-    <RootNamespace>ConsoleHelloWorld</RootNamespace>
-    <AssemblyName>ConsoleHelloWorld</AssemblyName>
+    <StartupObject>MinAndMax.MinAndMax</StartupObject>
+    <RootNamespace>MinAndMax</RootNamespace>
+    <AssemblyName>MinAndMax</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Console</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -20,7 +20,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>ConsoleHelloWorld.xml</DocumentationFile>
+    <DocumentationFile>MinAndMax.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
     <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
@@ -31,7 +31,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>ConsoleHelloWorld.xml</DocumentationFile>
+    <DocumentationFile>MinAndMax.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -67,7 +67,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsoleHelloWorld.vb" />
+    <Compile Include="MinAndMax.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
